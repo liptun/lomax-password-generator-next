@@ -1,0 +1,154 @@
+=====================================================================
+|                LOMAX PASSWORD SYSTEM GUIDE                        |
+|              (Version 1.00, 12 December 2005)                     |
+|                                                                   |  
+|              by moron_erick & victoria torzar                     |
+=====================================================================
+
+DISCLAIMER:   Data  and information is provided for research and 
+informational purposes only,  and is not intended for trading 
+purposes. If you wish to put a copy of this guide on your  web site 
+or elsewhere, please e-mail me and I will give  you  permission.  
+Please  do  not  distribute  this  guide except in its entirety. 
+Copyright 2005 Erickson Deveza & Victoria Torzar.
+
+
+-------------------------------------------------------------------
+[1] Introduction
+** Explains briefly what this FAQ could offer.
+
+[2] Symbols to number assignments
+** Conversion used for the numbers /\ to X - 0 to 3.
+
+[3] Password Table 
+** A handy reference for making Lomax Passwords. Basically a table of
+   repeating patterns involving the numbers 0(zero) to 3(three). Well, 
+   lets just say that our number system may look weird from time to 
+   time. 
+
+[4] Making Lomax Passwords 
+** A brief explanation with examples on how to make Lomax Passwords
+   to transport us into the desired level, alongside with the desired 
+   number of lives and continues...
+
+[5] The "[+|-]" sign...                                                  
+** We use this notation to compute for some patterns.
+        
+-------------------------------------------------------------------
+| [1] Introduction                                                |    
+-------------------------------------------------------------------
+** This game has an eight-character password system composed of the 
+   three basic playstation symbols (/\, O, [], X). Each password 
+   string encapsulates the STAGE, number of LIVES and CONTINUES.
+   This FAQ should enable everyone to create and modify Lomax pass-
+   words using the numbers 0 to 3...
+
+-------------------------------------------------------------------
+| [2] Symbols to number assignments                               |
+-------------------------------------------------------------------
+** To avoid confusion we'll be using this assignments for each basic
+   Playstation symbols:
+      --------------------
+      |  Symbol   |Value |
+      --------------------
+      |  Triangle |  0   |
+      |  Circle   |  1   |
+      |  Square   |  2   |
+      |  X        |  3   |
+      --------------------
+
+-------------------------------------------------------------------
+| [3] Password Table                                              |
+-------------------------------------------------------------------
+** Since the construction of the password string is eight-characters 
+   of a selecion for 4 figures then each password string should 
+   revolve/rotate between the numbers 0 to 3 while dividing itself 
+   from some divisible to 2, 4, 8, 16, and so on figures...
+---------------------------    ----------------------------------
+| Stage | B1 | B2| B3 |B4 |    | Lives | L1 | L2 | L3 | L4 | L5 |
+---------------------------    ----------------------------------
+|    1  | 0  | 0 | 0  | 1 |    |  0    | 0  | 3  | 1  | 0  |  2 |
+|    2  | 1  | 0 | 1  | 1 |    |  1    | 0  | 3  | 1  | 2  |  0 |
+|    3  | 2  | 0 | 2  | 1 |    |  2    | 1  | 2  | 1  | 0  |  2 |
+|    4  | 3  | 0 | 3  | 1 |    |  3    | 1  | 2  | 1  | 2  |  0 |
+|    5  | 0  | 1 | 0  | 1 |    |  4    | 2  | 1  | 1  | 0  |  2 |
+|    6  | 1  | 1 | 1  | 1 |    |  5    | 2  | 1  | 1  | 2  |  0 |
+|    7  | 2  | 1 | 2  | 1 |    |  6    | 3  | 0  | 1  | 0  |  2 |
+|    8  | 3  | 1 | 3  | 1 |    |  7    | 3  | 0  | 1  | 2  |  0 |
+|    9  | 0  | 2 | 0  | 1 |    |  8    | 0  | 3  | 0  | 0  |  3 |
+|   10  | 1  | 2 | 1  | 1 |    |  9    | 0  | 3  | 0  | 2  |  1 |
+|   11  | 2  | 2 | 2  | 1 |    | 10    | 1  | 2  | 0  | 0  |  3 |
+|   12  | 3  | 2 | 3  | 1 |    | 11    | 1  | 2  | 0  | 2  |  1 |
+|   13  | 0  | 3 | 0  | 1 |    | 12    | 2  | 1  | 0  | 0  |  3 |
+|   14  | 1  | 3 | 1  | 1 |    | 13    | 2  | 1  | 0  | 2  |  1 |
+|   15  | 2  | 3 | 2  | 1 |    | 14    | 3  | 0  | 0  | 0  |  3 |
+|   16  | 3  | 3 | 3  | 1 |    | 15    | 3  | 0  | 0  | 2  |  1 |
+|   17  | 0  | 0 | 1  | 0 |    | 16    | 0  | 3  | 3  | 0  |  0 |
+|   18  | 1  | 0 | 0  | 0 |    | 17    | 0  | 3  | 3  | 2  |  2 |
+|   19  | 2  | 0 | 3  | 0 |    | 18    | 1  | 2  | 3  | 0  |  0 |
+|   20  | 3  | 0 | 2  | 0 |    | 19    | 1  | 2  | 3  | 2  |  2 |
+|   21  | 0  | 1 | 1  | 0 |    | 20    | 2  | 1  | 3  | 0  |  0 |
+|   22  | 1  | 1 | 0  | 0 |    | 21    | 2  | 1  | 3  | 2  |  2 |
+---------------------------    | 22    | 3  | 0  | 3  | 0  |  0 |
+                               | 23    | 3  | 0  | 3  | 2  |  2 |
+-------------------------      | 24    | 0  | 3  | 2  | 0  |  1 |
+| Continues  | Reverse  |      | 25    | 0  | 3  | 2  | 2  |  3 |
+-------------------------      | 26    | 1  | 2  | 2  | 0  |  1 |
+|   0        |  3       |      | 27    | 1  | 2  | 2  | 2  |  3 |
+|   1        |  2       |      | 28    | 2  | 1  | 2  | 0  |  1 |
+|   2        |  1       |      | 29    | 2  | 1  | 2  | 2  |  3 |
+|   3        |  0       |      | 30    | 3  | 0  | 2  | 0  |  1 |
+-------------------------      | 31    | 3  | 0  | 2  | 2  |  3 |
+                               ----------------------------------
+
+-------------------------------------------------------------------
+| [4] Making Lomax Passwords                                      |
+-------------------------------------------------------------------
+** In order for us to build an eight-character Lomax Password we are
+   allowed to chose one shape/value from those 4 playstation shapes
+   (respectively numbered from 0 to 3) for each character that forms
+   the string. We would need to give 3 values before we could start
+   making our desired password - 1) what stage; 2) how many lives; 
+   30 how many continues - do we really want. Lets say we would want 
+   to create the password that would take us to 
+   <stage 16; with 0 Life and 1 continue>:
+
+   Heres how:
+   1st character/shape: B3 [+|-] L5
+   2nd character/shape: Reverse [+|-] B2 [+|-] L1
+   3rd character/shape: B1
+   4th character/shape: B2 
+   5th character/shape: B4 + L4
+   6th character/shape: L2
+   7th character/shape: L3
+   8th character/shape: Continues
+
+   So we want to go to stage 16 with 0 Life and 1 Continue...
+
+   The first password character would be derived from B3 [+|-] L5:
+   Basing on our Password Table above, B3 for stage 16 would be 3; 
+   L5 for 0 Life would be 2. So 3 [+|-] 2 would result to 1. So we 
+   now have 1 for our first character; and 1 would be coverted to 
+   the Circle symbol says our Symbols to number assignments.
+
+   Our second character would be derived from 
+   Reverse [+|-] B2 [+|-] L1: We check again our Password Table; 
+   thus, 3[+|-]3[+|-]0. Our second character woul result again to 1.
+
+   Then B1 and B2 would be 3...
+   
+   We'll derive our 5th character from B4+L4...
+   B4 which is 1 + L4 which is 0 would be 1... And so on...
+
+   If we follow the above how-tos we would get the password for 
+   stage 16 with 0 Life and 1 Continue...
+
+   We would get this result: 1 1 3 3 1 3 1 1 = 
+           Circle Circle X X Circle X Circle Circle
+
+-------------------------------------------------------------------
+| [5] The "[+|-]" sign...                                         |
+-------------------------------------------------------------------
+** Add the numbers if the result would be 3 or less...
+   Subtract if the result would be more than 3...   
+
