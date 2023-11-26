@@ -19,19 +19,19 @@ export const App = observer(() => {
                 <Select
                     label="Stage"
                     options={appState.stageOptions.map((value) => [value.toString(), value.toString()])}
-                    value={appState.stage.toString()}
+                    value={appState.passwordParams.stage.toString()}
                     onChange={appState.onStageChangeHandle}
                 />
                 <Select
                     label="Lives"
                     options={appState.livesOptions.map((value) => [value.toString(), value.toString()])}
-                    value={appState.lives.toString()}
+                    value={appState.passwordParams.lives.toString()}
                     onChange={appState.onLivesChangeHandle}
                 />
                 <Select
                     label="Continues"
                     options={appState.continuesOptions.map((value) => [value.toString(), value.toString()])}
-                    value={appState.continues.toString()}
+                    value={appState.passwordParams.continues.toString()}
                     onChange={appState.onContinuesChangeHandle}
                 />
             </SelectWrapper>

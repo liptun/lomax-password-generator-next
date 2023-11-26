@@ -1,5 +1,6 @@
-import { action, computed, makeObservable } from "mobx";
+import { computed, makeObservable } from "mobx";
 import { z } from "zod";
+import { PasswordParamsModel } from "./PasswordParamsModel";
 
 export const stageSchema = z.union([
     z.literal(1),
@@ -162,11 +163,19 @@ export class LomaxPassword {
     };
 
     constructor(
-        private stage: Stage,
-        private lives: Lives,
-        private continues: Continues
+        private readonly passwordParams: PasswordParamsModel
     ) {
         makeObservable(this);
+    }
+
+    @computed get stage() {
+        return this.passwordParams.stage;
+    }
+    @computed get lives() {
+        return this.passwordParams.lives;
+    }
+    @computed get continues() {
+        return this.passwordParams.continues;
     }
 
     @computed private get b1() {
@@ -236,10 +245,7 @@ export class LomaxPassword {
         return this.continues;
     }
 
-    @action public password(stage: Stage, lives: Lives, continues: Continues): number[] {
-        this.stage = stage;
-        this.lives = lives;
-        this.continues = continues;
+    @computed public get password(): number[] {
         return [this.pos1, this.pos2, this.pos3, this.pos4, this.pos5, this.pos6, this.pos7, this.pos8];
     }
 }
